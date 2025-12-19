@@ -1,0 +1,94 @@
+D:\>git clone https://github.com/pandyakushal/demo.git
+Cloning into 'demo'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+D:\>cd demo
+
+D:\demo>code .
+
+D:\demo> git add .
+
+D:\demo> git commit -m"file 1"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'atmiya@TFA7-3-16.(none)')
+
+D:\demo>git config --global user.email "pandyakushal101@gmail.com"
+
+D:\demo>git config --global user.name "pandyakushal"
+
+D:\demo> git commit -m"file 1"
+[main 24a6b17] file 1
+ 4 files changed, 4 insertions(+)
+ create mode 100644 hello1.php
+ create mode 100644 hello2.php
+ create mode 100644 hello3.php
+ create mode 100644 hello4.html
+
+D:\demo>git push
+info: please complete authentication in your browser...
+
+D:\demo>
+
+D:\demo>git push
+info: please complete authentication in your browser...
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (6/6), 397 bytes | 397.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/pandyakushal/demo.git
+   ef12ddc..24a6b17  main -> main
+
+D:\demo> git commit -m"FILE UPDATED"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello4.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\demo> git add .
+
+D:\demo> git commit -m"FILE UPDATED"
+[main a7cb666] FILE UPDATED
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+D:\demo> git add .
+
+D:\demo> git commit -m"FILE UPDATED"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+D:\demo>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 265 bytes | 265.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/pandyakushal/demo.git
+   24a6b17..a7cb666  main -> main
+
+D:\demo>
